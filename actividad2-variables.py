@@ -23,4 +23,3 @@ print(pais)
 print(edad)
 # %%
 print(estado civil)
-
