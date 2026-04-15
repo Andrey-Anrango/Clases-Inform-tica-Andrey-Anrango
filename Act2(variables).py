@@ -68,3 +68,6 @@ elif longitudN < longitudA:
 else:
     print("El nombre y el apellido tienen la misma longitud")
 # %%
+NUMERO_UNO = 5
+NUMERO_DOS = 4
+# %%
