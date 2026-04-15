@@ -12,7 +12,7 @@ print(type(first_name))
 print(type(longitud))
 
 # %%
-primer_nombre, apellido, pais, edad, estado civil = "Andrey". "Anrango", "Ecuador", "16", "soltero"
+primer_nombre, apellido, pais, edad, estado_civil = "Andrey", "Anrango", "Ecuador", "16", "soltero"
 # %%
 print(primer_nombre)
 # %%
@@ -22,7 +22,7 @@ print(pais)
 # %%
 print(edad)
 # %%
-print(estado civil)
+print(estado_civil)
 # %%
 """Andrey Anrango
 Actividad 2: Nivel 1 y 2
@@ -32,7 +32,7 @@ nombre = "Andrey"
 # %%
 apelido= "Anrango"
 # %%
-nombreCompleto=nombre + " " +apellido
+nombreCompleto="Andrey" + " " +"Anrango"
 # %%
 pais = "Ecuador"
 # %%
