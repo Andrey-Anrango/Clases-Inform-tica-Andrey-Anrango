@@ -47,5 +47,25 @@ print("La distancia euclidiana entre los puntos es:", distancia_euclidiana)
 y = x² + 6x + 9 
 Prueba con diferentes valores de x y determina para qué valor de x, y es igual a 0."""
 x = float(input("Ingrese el valor de x: "))
+y = x**2 + 6*x + 9
+print("El valor de y es:", y)
+# %%
+#Encuentra la longitud de las palabras “python” y “dragón” y realiza una comparación booleana (verdadero/falso). 
+palabra1 = "python"
+palabra2 = "dragón"
+longitud_palabra1 = len(palabra1)
+longitud_palabra2 = len(palabra2)
+comparacion = longitud_palabra1 == longitud_palabra2
+print("La longitud de la palabra 'python' es:", longitud_palabra1)
+print("La longitud de la palabra 'dragón' es:", longitud_palabra2)
+print("¿Las palabras 'python' y 'dragón' tienen la misma longitud?", comparacion) 
+#Usa el operador and para verificar si “on” está presente tanto en “python” como en “dragón”.
+presencia_on_python = "on" in palabra1
+presencia_on_dragon = "on" in palabra2
+presencia_on_ambas = presencia_on_python and presencia_on_dragon
+print("¿La subcadena 'on' está presente en 'python'?", presencia_on_python)
+print("¿La subcadena 'on' está presente en 'dragón'?", presencia_on_dragon)
+print("¿La subcadena 'on' está presente en ambas palabras?", presencia_on_ambas)
+#
 
 
