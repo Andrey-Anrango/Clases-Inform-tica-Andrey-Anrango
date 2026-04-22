@@ -66,6 +66,6 @@ presencia_on_ambas = presencia_on_python and presencia_on_dragon
 print("¿La subcadena 'on' está presente en 'python'?", presencia_on_python)
 print("¿La subcadena 'on' está presente en 'dragón'?", presencia_on_dragon)
 print("¿La subcadena 'on' está presente en ambas palabras?", presencia_on_ambas)
-#
+
 
 

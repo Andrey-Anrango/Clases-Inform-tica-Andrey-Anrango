@@ -1,6 +1,5 @@
-"""Parte A. Análisis y comprensión aplicada (30 puntos) 
-1. Análisis de datos y código (15 puntos) 
-Observa el siguiente código:
+# ===== PARTE A ===== 
+"""Observa el siguiente código:
 nombre = "Lucía" 
 edad = 16 
 promedio = 9.75 
@@ -27,11 +26,12 @@ c) Explica la diferencia entre /, // y %.
 #"/" Es la división normal que todos conocemos, "//" es la división entera que devuelve solo la parte entera del resultado, y "%" es el operador de módulo que devuelve el resto de la división entre dos números.
 d) Escribe una instrucción que permita comprobar la versión de Python que se está usando. 
 # import sys
-e) Escribe una instrucción que permita consultar las palabras reservadas de Python. """
-# import keyword
+e) Escribe una instrucción que permita consultar las palabras reservadas de Pythom.
+mport keyword"""
 
-"""Parte B. Corrección y construcción de fragmentos (30 puntos) 
-3. Corrección de código (15 puntos) 
+# ===== PARTE B ===== 
+# Código corregido 
+"""3.Corrección de código (15 puntos) 
 El siguiente programa tiene errores. Reescríbelo de forma correcta para que funcione. """
 ancho = float(input("Ingrese el ancho del terreno: ")) 
 largo = float(input("Ingrese el largo del terreno: ")) 
@@ -63,8 +63,9 @@ print(frase_con_modificación)
 división=frase_con_modificación.split()
 print(división)
 
-"""Parte C. Problema integrador  
-5. Desarrollo de programa (40 puntos) 
+# ===== PARTE C ===== 
+# Programa integrador (40 puntos)
+"""5.Desarrollo de Programa) 
 Una tienda desea generar un resumen de presupuesto para cubrir una pared rectangular con 
 papel decorativo. 
 Desarrolla un programa que: 
@@ -97,7 +98,3 @@ print(nombre_completo.upper())
 print(len(nombre_completo))
 print("a" in nombre_completo)
 print(costo_total > 100) 
-
-
-
-
