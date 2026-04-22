@@ -63,4 +63,41 @@ print(frase_con_modificación)
 división=frase_con_modificación.split()
 print(división)
 
+"""Parte C. Problema integrador  
+5. Desarrollo de programa (40 puntos) 
+Una tienda desea generar un resumen de presupuesto para cubrir una pared rectangular con 
+papel decorativo. 
+Desarrolla un programa que: 
+1. Solicite al usuario: Nombre, apellido, país, ancho de la pared, alto de la pared, precio por 
+metro cuadrado  
+o Calcule: área de la pared, costo total estimado  
+2. Cree la variable nombre_completo.  
+1. Muestre un reporte final que incluya: 
+o nombre completo, país, área calculada, costo total (La impresión del reporte 
+f
+inal debe realizarse usando f-strings.) 
+3. Muestre además:  
+o nombre_completo en mayúsculas  
+o la longitud de nombre_completo  
+o si la letra "a" está presente en nombre_completo  
+o si el costo total es mayor que 100 """
+
+nombre = input("Ingrese su nombre: ")
+apellido = input("Ingrese su apellido: ")
+pais = input("Ingrese su país: ")
+ancho = float(input("Ingrese el ancho de la pared en metros: "))
+alto = float(input("Ingrese el alto de la pared en metros: "))
+precio_m2=float(input("Ingrese el precio por metro cuadrado: "))
+area = ancho * alto
+costo_total = area * precio_m2
+space= " "
+nombre_completo = nombre + space + apellido
+print(f"Reporte final:\nNombre completo:{nombre_completo}, país: {pais}, área calculada: {area} m², costo total: {costo_total} USD")
+print(nombre_completo.upper())
+print(len(nombre_completo))
+print("a" in nombre_completo)
+print(costo_total > 100) 
+
+
+
 
