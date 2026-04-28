@@ -51,3 +51,7 @@ elif numero<0 and numero%2==1:
 else:
     print("El numero es cero")
 print("Fin del programa")
+
+#Con short hand
+print("El número es positivo") if numero>0 else print("El número es negativo") 
+print("El número es par") if numero%2==0 else print("El número es impar")
