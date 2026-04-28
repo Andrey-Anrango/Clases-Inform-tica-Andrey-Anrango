@@ -19,3 +19,22 @@ else:
         else:
             print("D(reprobado)")
 print("Gracias por usar el programa")
+# %%
+#numero par e impar tambien positivo y negativo.
+numero= int(input("Ingrese un numero: "))
+if numero==0:
+    print("El numero es cero")
+else: 
+    if numero>0:
+        if numero%2==0:
+            print("El numero es par y positivo")
+        else:
+            print("El numero es impar y positivo")
+    else:
+        if numero%2==0:
+            print("El numero es par y negativo")
+        else:
+            print("El numero es impar y negativo")
+print("Fin del programa")
+
+# %%
