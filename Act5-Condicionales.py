@@ -21,6 +21,7 @@ else:
 print("Gracias por usar el programa")
 # %%
 #numero par e impar tambien positivo y negativo.
+print("Ingrese un numero para determinar si es par o impar, positivo o negativo")
 numero= int(input("Ingrese un numero: "))
 if numero==0:
     print("El numero es cero")
@@ -38,3 +39,15 @@ else:
 print("Fin del programa")
 
 # %%
+#Codigo con ELIF
+if numero>0 and numero%2==0:
+    print("El numero es par y positivo")
+elif numero>0 and numero%2==1:
+    print("El numero es impar y positivo")
+elif numero<0 and numero%2==0:
+    print("El numero es par y negativo")
+elif numero<0 and numero%2==1:
+    print("El numero es impar y negativo")
+else:
+    print("El numero es cero")
+print("Fin del programa")
