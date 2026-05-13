@@ -28,3 +28,32 @@ suma= consonantes+vocales
 print (f"consonantes totales: {consonantes}")
 print(f"vocales totales: {vocales}")
 print(f"letras totales: {suma}")
+# %%
+it_companies = {"Facebook", "Facebook", "Google", "Apple", "Amazon"}
+for company in it_companies:
+    print(company)
+# %%
+asistentes= {"Ana", "Luis", "Maria", "Ana", "Carlos", "Luis"}
+for estudiante in asistentes:
+    print("certificado para: ", estudiante)
+
+# %%
+#ENCONTRAR NUMERO EN LISTA
+lista= [1, 2, 3, 4, 5]
+numbers= int(input("ingresa un numero: "))
+for number in lista:
+    if number == numbers:
+        print("se encontro el numero")
+        break
+else: 
+    print("no se encontro el numero")
+# %%
+#CEDULA
+cedula= input("Ingrese su numero de cedula: ")
+cedula_limpia= ""
+for caracter in cedula:
+    if caracter == "-" or caracter == " ":
+        continue
+    cedula_limpia = cedula_limpia + caracter
+print(cedula_limpia)
+
