@@ -48,7 +48,7 @@ print("Cantidad de productos únicos:", contador_productos)
 print("Productos con más de 6 letras:", mas_de_6letras)
 
 #Break
-orreo = input("Ingrese su correo electrónico: ")
+correo = input("Ingrese su correo electrónico: ")
 usuario = ""
 for caracter in correo:
     if caracter == "@":
@@ -58,5 +58,23 @@ print("El nombre de usuario es:", usuario)
 
 # %%
 #CICLO FOR IN RANGE
-
-
+suma = 0
+for i in range(5):
+    nota = int(input(f"Ingrese la nota {i+1}: "))
+    suma += nota
+promedio = suma / 5
+print(f"El promedio de las notas es: {promedio}")
+"""-----------------------"""
+# %%
+while True:
+    suma = 0
+    for i in range(5):
+        nota = int(input("Ingrese una nota: "))
+        if nota < 2:
+            print("No se puede sacar el promedio")
+            break
+        suma = suma + nota
+    else:
+        promedio = suma / 5
+        print(f"El promedio es: {promedio}")
+# %%
