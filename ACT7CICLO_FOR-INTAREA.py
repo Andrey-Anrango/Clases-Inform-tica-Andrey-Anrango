@@ -56,3 +56,7 @@ for caracter in correo:
     usuario += caracter
 print("El nombre de usuario es:", usuario)
 
+# %%
+#CICLO FOR IN RANGE
+
+
