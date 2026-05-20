@@ -8,3 +8,6 @@ cantidad=0
 suma=0
 for i in range(1, 4):
     suma=suma+notas[i]
+    cantidad= cantidad+1
+promedio =suma/cantidad
+print(f"El promedio de las notas es: {promedio}")
