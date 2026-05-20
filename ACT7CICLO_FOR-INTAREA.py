@@ -62,7 +62,7 @@ suma = 0
 for i in range(5):
     nota = int(input(f"Ingrese la nota {i+1}: "))
     suma += nota
-promedio = suma / 5
+    promedio = suma / 5
 print(f"El promedio de las notas es: {promedio}")
 """-----------------------"""
 # %%
@@ -76,5 +76,15 @@ while True:
         suma = suma + nota
     else:
         promedio = suma / 5
-        print(f"El promedio es: {promedio}")
+    print(f"El promedio es: {promedio}")
+print("Fin del programa")
+
 # %%
+
+num= int(input("Ingrese un número para hallar su tabla de multiplicación: "))
+for i in range(1, 11):
+    print(f"{num} x {i} = {num * i}")
+print("Tabla de multiplicación completa.")
+
+# %%
+notas = [5, 8, 9, 7, 10]
