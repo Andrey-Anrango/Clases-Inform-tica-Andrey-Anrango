@@ -15,7 +15,6 @@ print("Promedio del curso:", promedio)
 print("Estudiantes aprobados:", aprobados)
 print("Estudiantes reprobados:", reprobados)
 
-#%%
 #EJERCICIOS STRING
 contraseña= "Python2026"
 letras= 0
@@ -56,7 +55,6 @@ for caracter in correo:
     usuario += caracter
 print("El nombre de usuario es:", usuario)
 
-# %%
 #CICLO FOR IN RANGE
 suma = 0
 for i in range(5):
@@ -65,7 +63,7 @@ for i in range(5):
     promedio = suma / 5
 print(f"El promedio de las notas es: {promedio}")
 """-----------------------"""
-# %%
+#rrrr
 while True:
     suma = 0
     for i in range(5):
@@ -77,14 +75,3 @@ while True:
     else:
         promedio = suma / 5
     print(f"El promedio es: {promedio}")
-print("Fin del programa")
-
-# %%
-
-num= int(input("Ingrese un número para hallar su tabla de multiplicación: "))
-for i in range(1, 11):
-    print(f"{num} x {i} = {num * i}")
-print("Tabla de multiplicación completa.")
-
-# %%
-notas = [5, 8, 9, 7, 10]
