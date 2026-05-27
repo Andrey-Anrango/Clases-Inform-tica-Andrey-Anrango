@@ -6,16 +6,20 @@ while True:
         break
     else:
         print("Clave incorrecta. Inténtalo de nuevo.")
-print("Temas evaluados en la unidad")
-print("-variables")
-print("-calculos")
-print("-input")
-print("-print")
-print("-f-string")
-print("-condicionales")
-print("-ciclos")
+temas = ["Temas a evaluar:"
+    "variables",
+    "cálculos",
+    "input",
+    "print",
+    "f-string",
+    "condicionales",
+    "ciclos"]
+print("\nTemas evaluados en la unidad:")
+for tema in temas:
+    print("-", tema)
 cant_estudiantes= int(input("Ingrese la cantidad de estudiantes a evaluar: "))
 for i in range(cant_estudiantes):
+
     print(f"Evaluando al estudiante {i+1}")
     nombre = input("Ingrese el nombre del estudiante: ")
     nota_ejercicios = float(input("Ingrese la nota de ejercicios básicos: "))
@@ -37,7 +41,7 @@ for i in range(cant_estudiantes):
         estado=("Requiere refuerzo")
     print("---Reporte final del estudiante---")
     print(f"Nombre: {nombre}")
-    print(f"Promedio: {prom}")
+    print(f"Promedio: {prom:.2f}")
     print(f"Prácticas realizadas: {prácticas}")
     print(f"Estado académico: {estado}")
 print("----FIN DEL PROGRAMA----")
