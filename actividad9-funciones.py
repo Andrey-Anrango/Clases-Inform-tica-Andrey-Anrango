@@ -45,40 +45,24 @@ numero2 = int(input('Ingrese el segundo número: '))
 suma = numero1 + numero2
 print(f'La suma es: {suma}')
 
-#con parametros
 def saludar(nombre):
     print(f"Hola {nombre}, bienvenido al curso de Python.")
 saludar("Andrey")
 
-
+# %%
 def mostrar_estudiante(nombre, curso):
     print("Estudiante registrado:")
-    print(f"Nombre: {nombre}")
-    print(f"Curso: {curso}")
-    print("----------------------")
-
-
-# Función sin parámetros
+    print("Nombre:", nombre)
+    print("Curso:", curso)
+    print("---------------------")
 def mensaje_final():
     print("Fin del programa")
-
-
-# Preguntar cuántos estudiantes se van a ingresar
 cantidad = int(input("¿Cuántos estudiantes desea ingresar? "))
-
 contador = 0
-
 while contador < cantidad:
-    print(f"\nEstudiante {contador + 1}")
-    
-    nombre = input("Ingrese el nombre: ")
-    curso = input("Ingrese el curso: ")
-    
-    # Llamar a la función
+    print("\nRegistro del estudiante", contador + 1)
+    nombre = input("Ingrese el nombre del estudiante: ")
+    curso = input("Ingrese el curso del estudiante: ")
     mostrar_estudiante(nombre, curso)
-    
     contador += 1
-
-# Mensaje final
 mensaje_final()
-
