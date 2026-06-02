@@ -66,3 +66,30 @@ while contador < cantidad:
     mostrar_estudiante(nombre, curso)
     contador += 1
 mensaje_final()
+# %%
+# EJEMPLO 3:
+def calcular_promedio(nota1, nota2, nota3, name, apellido):
+    promedio = (nota1 + nota2 + nota3) / 3
+    print(f"El promedio de las notas es de: {name} {apellido}. es {promedio}")
+nombre= input("Ingrese el nombre del estudiante: ")
+apellido1= input("Ingrese el apellido del estudiante: ")
+notas1 = float(input("Ingrese la primera nota: "))
+notas2 = float(input("Ingrese la segunda nota: "))
+notas3 = float(input("Ingrese la tercera nota: "))
+print("---Resultado---")
+calcular_promedio(notas1, notas2, notas3, nombre, apellido1)
+# %%
+#CON RETTORNO SIN PARAMETROS
+def obtener_mensaje():
+    mensaje = "¡Hola! Bienvenido al sistema."
+    return mensaje  
+def generar_nombre_completo(nombre, apellido):
+    nombre_completo = f"{nombre} {apellido}"
+    return nombre_completo
+nombre = input("Ingrese su nombre: ")
+apellido = input("Ingrese su apellido: ")
+print(obtener_mensaje())
+print(generar_nombre_completo(nombre, apellido))
+# %%
+#TAREA:
+
