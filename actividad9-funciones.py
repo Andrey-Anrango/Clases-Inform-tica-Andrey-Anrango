@@ -92,4 +92,120 @@ print(obtener_mensaje())
 print(generar_nombre_completo(nombre, apellido))
 # %%
 #TAREA:
+def calcular_total_producto(precio, cantidad):
+    return precio * cantidad
+print("=== SISTEMA DE COMPRA ===")
+subtotal = 0 
+for i in range(1, 4):
+    print(f"\nProducto {i}")
+    nombre = input("Ingrese el nombre del producto: ")
+    precio = float(input("Ingrese el precio del producto: "))
+    while precio <= 0:
+        print("Precio no válido. Debe ser mayor que 0.")
+        precio = float(input("Ingrese nuevamente el precio del producto: "))
+    cantidad = int(input("Ingrese la cantidad comprada: "))
+    while cantidad <= 0:
+        print("Cantidad no válida. Debe ser mayor que 0.")
+        cantidad = int(input("Ingrese nuevamente la cantidad comprada: "))
+    total_producto = calcular_total_producto(precio, cantidad)
+    subtotal += total_producto
+    print(f"Producto registrado: {nombre}")
+    print(f"Total del producto: ${total_producto:.2f}")
+iva = subtotal * 0.15
+total_pagar = subtotal + iva
+print("\n=== RESUMEN DE COMPRA ===")
+print(f"Subtotal: ${subtotal:.2f}")
+print(f"IVA (15%): ${iva:.2f}")
+print(f"Total a pagar: ${total_pagar:.2f}")
 
+
+# %%
+#EJERCICIO1 - MENU CONVERSIÓN DE MEDIDAS
+def mostrar_menu():
+    print("=== MENU DE CONVERSIÓN ===")
+    print("Seleccione la conversión que desea realizar:")
+    print("1. Metros a Centímetros")
+    print("2. Metros a Kilómetros")
+    print("3. Metros a Milímetros")
+    print("4. Metros a Pulgadas")
+def convertir_metros_a_centimetros(medida):
+    resultado=medida * 100
+    return resultado
+def convertir_metros_a_kilometros(medida):
+    resultado=medida / 1000
+    return resultado
+def convertir_metros_a_milimetros(medida):
+    resultado=medida * 1000
+    return resultado
+def convertir_metros_a_pulgadas(medida):
+    resultado=medida * 39.3701
+    return resultado    
+mostrar_menu()
+opcion = input("Ingrese el número de la conversión que desea realizar: ")
+medida = float(input("Ingrese la medida a convertir en metros (m): "))
+print("=== RESULTADO DE CONVERSIÓN ===")
+if opcion == '1':
+    print(f"{medida} metros son {convertir_metros_a_centimetros(medida):.2f} centímetros.")
+elif opcion == '2':
+    print(f"{medida} metros son {convertir_metros_a_kilometros(medida):.4f} kilómetros.")
+elif opcion == '3':
+    print(f"{medida} metros son {convertir_metros_a_milimetros(medida):.2f} milímetros.")
+elif opcion == '4':
+    print(f"{medida} metros son {convertir_metros_a_pulgadas(medida):.2f} pulgadas.")
+else:
+    print("Opción no válida.")
+
+# %%
+#Ejercico2 - Menú de calificaciones
+def mostrar_menu_calificaciones():
+    print("=== MENU DE CALIFICACIONES ===")
+    print("Seleccione la opción que desea realizar:")
+    print("1. Calcular el promedio de tres calificaciones")
+    print("2. Determinar si un estudiante aprobó o reprobó")
+    print("3. Mostrar la nota mayor")
+    print("4. Moastrar la nota menor")
+    print("5. Salir")
+def calcular_promedio(calificacion1, calificacion2, calificacion3):
+    promedio = (calificacion1 + calificacion2 + calificacion3) / 3
+    return promedio
+def aprobacion(calificacion1, calificacion2, calificacion3):
+    promedio = calcular_promedio(calificacion1, calificacion2, calificacion3)
+    if promedio>=70:
+        return "Aprobado"
+    else:
+        return "Reprobado"
+def nota_mayor(calificacion1, calificacion2, calificacion3):
+    if calificacion1>calificacion2 and calificacion1>calificacion2:
+        return calificacion1
+    elif calificacion2>calificacion1 and calificacion2>calificacion3:
+        return calificacion2
+    else:
+        return calificacion3
+def nota_menor(calificacion1, calificacion2, calificacion3):
+    if calificacion1>calificacion2 and calificacion1>calificacion2:
+        return calificacion2
+    elif calificacion2>calificacion1 and calificacion3>calificacion1:
+        return calificacion1
+    else: 
+        calificacion3
+mostrar_menu_calificaciones()
+opcion=input("Ingrese el número de la opción que desea realizar: ")
+if opcion=="5":
+    print("Saliendo del programa...")
+else:
+    calificacion1=float(input("Ingrese la primera calificación: "))
+    calificacion2=float(input("Ingrese la segunda calificación: "))
+    calificacion3=float(input("Ingrese la tercera calificación: "))
+    if opcion=="1":
+        print(f"El promedio de las calificaciones es: {calcular_promedio(calificacion1, calificacion2, calificacion3):.2f}")
+    elif opcion=="2":
+        print(f"El estudiante está: {aprobacion(calificacion1, calificacion2, calificacion3)}")
+    elif opcion=="3":
+        print(f"La nota mayor es: {nota_mayor(calificacion1, calificacion2, calificacion3)}")
+    elif opcion=="4":
+        print(f"La nota menor es: {nota_menor(calificacion1, calificacion2, calificacion3)}")
+    else:
+        print("Opción no válida.")
+print("Fin del programa.")
+
+# %%
